@@ -38,7 +38,7 @@ function plottingResults(items) {
       return ('0' + time).slice(-2)
     }
     
-    const formattedDate = `Дата: ${addZero(date.getFullYear())}-${addZero(date.getMonth())}-${addZero(date.getDate())} Время: ${addZero(date.getHours())}:${addZero(date.getMinutes())}:${addZero(date.getSeconds())}`
+    const formattedDate = `Дата: ${addZero(date.getFullYear())}-${addZero(date.getMonth() + 1)}-${addZero(date.getDate())} Время: ${addZero(date.getHours())}:${addZero(date.getMinutes())}:${addZero(date.getSeconds())}`
 
     const videoCard = `
           <div class="results__video-card video-card">            
