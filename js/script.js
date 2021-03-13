@@ -33,8 +33,13 @@ form.onsubmit = function (e) {
 function plottingResults(items) {
   items.forEach((el) => {
     const date = new Date(el.snippet.publishTime);
-    const formattedDate = `Дата: ${date.getFullYear()}-${date.getMonth()}-${date.getDate()} Время: ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
+
+    function addZero(time) {
+      return ('0' + time).slice(-2)
+    }
     
+    const formattedDate = `Дата: ${addZero(date.getFullYear())}-${addZero(date.getMonth())}-${addZero(date.getDate())} Время: ${addZero(date.getHours())}:${addZero(date.getMinutes())}:${addZero(date.getSeconds())}`
+
     const videoCard = `
           <div class="results__video-card video-card">            
             <div class="video-card__descriptions descriptions">
