@@ -42,7 +42,7 @@ function plottingResults(items) {
               <p class="descriptions__date">${formattedDate}</p>
             </div>
 
-            <iframe class="video-card__video" width="420" height="315" src="http://www.youtube.com/embed/${el.id.videoId}" frameborder="0" allowfullscreen></iframe>          
+            <iframe class="video-card__video" width="420" height="315" src="https://www.youtube.com/embed/${el.id.videoId}" frameborder="0" allowfullscreen></iframe>          
           </div>
           `;
 
