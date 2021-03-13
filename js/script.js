@@ -34,6 +34,7 @@ function plottingResults(items) {
   items.forEach((el) => {
     const date = new Date(el.snippet.publishTime);
     const formattedDate = `Дата: ${date.getFullYear()}-${date.getMonth()}-${date.getDate()} Время: ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
+    
     const videoCard = `
           <div class="results__video-card video-card">            
             <div class="video-card__descriptions descriptions">
